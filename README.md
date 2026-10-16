@@ -7,7 +7,7 @@ Web personal estática (HTML + CSS + JS, sin dependencias).
 | Archivo      | Qué contiene |
 |--------------|--------------|
 | `index.html` | Todos los textos de la web |
-| `styles.css` | Colores, tipografías y diseño (los colores están arriba del todo, en `:root`) |
+| `styles.css` | Colores, tipografías y diseño (paleta Bauhaus: rojo, amarillo, azul, negro y crema; está arriba del todo, en `:root`) |
 | `script.js`  | Menú móvil, animaciones y las respuestas del buscador “¿Cuál es tu problema?” |
 
 ## Secciones
