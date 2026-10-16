@@ -21,7 +21,6 @@ Web personal estática (HTML + CSS + JS, sin dependencias).
 
 ## Pendiente de personalizar
 
-- Email de contacto (`hola@tudominio.com`) y enlaces a Instagram / LinkedIn en `index.html`.
 - Foto: sustituir el avatar con la “A” por una imagen real.
 - Intereses (chips) y textos de “Quién soy”.
 
