@@ -1,33 +1,47 @@
 # Andrea · Servicios digitales y creativos
 
-Web personal estática (HTML + CSS + JS, sin dependencias).
+Web personal estática (HTML + CSS + JS, sin dependencias ni llamadas a terceros).
 
 ## Estructura
 
-| Archivo      | Qué contiene |
-|--------------|--------------|
-| `index.html` | Todos los textos de la web |
-| `styles.css` | Colores, tipografías y diseño (paleta Bauhaus —rojo, amarillo, azul, negro y crema— más rosa y pasteles: rosa, azul cielo, mantequilla y lila; está arriba del todo, en `:root`) |
-| `script.js`  | Menú móvil, animaciones y las respuestas del buscador “¿Cuál es tu problema?” |
+| Archivo / carpeta  | Qué contiene |
+|--------------------|--------------|
+| `index.html`       | Web en español |
+| `en/index.html`    | Web en inglés |
+| `aviso-legal.html` | Aviso legal (LSSI) — **plantilla, rellena tus datos** |
+| `privacidad.html`  | Política de privacidad (RGPD) — **plantilla, rellena tus datos** |
+| `styles.css`       | Colores, tipografía y diseño. Paleta Bauhaus (rojo, amarillo, azul, negro, crema) + rosa y pasteles, al principio en `:root` |
+| `script.js`        | Configuración (`CONFIG`), menú, buscador “¿Cuál es tu problema?” (textos ES/EN), formulario y estadísticas |
+| `fonts/`           | Tipografía Jost alojada en la propia web (licencia OFL en `fonts/OFL.txt`) |
+| `assets/`          | Imágenes de vista previa al compartir (`og-image.png` ES, `og-image-en.png` EN) |
 
-## Secciones
+## Configuración pendiente (en `script.js`, objeto `CONFIG`)
 
-1. **Hero** – “Pienso fuera de la caja” (la palabra *fuera* se escapa literalmente de la caja).
-2. **Quién soy** – presentación e intereses.
-3. **Cómo pienso** – el método común a todo: Observo → Detecto el problema → Diseño la solución → Pruebo y ajusto.
-4. **Qué hago** – cuatro territorios: Digital & tecnología, Contenido & marca, Arte & cultura, Fuerza & halterofilia.
-5. **Tu problema** – buscador interactivo que lleva al visitante al servicio adecuado.
-6. **Contacto**.
+### Formulario de contacto — Formspree
+1. Crea una cuenta gratis en <https://formspree.io> con `montesgz@gmail.com`.
+2. Crea un formulario nuevo; te dará una dirección tipo `https://formspree.io/f/abcd1234`.
+3. Pega `abcd1234` en `formspreeId`.
 
-## Pendiente de personalizar
+Mientras esté vacío, el formulario **ya funciona**: abre el programa de correo del visitante con el mensaje preparado.
 
-- Foto: sustituir el avatar con la “A” por una imagen real.
+### Estadísticas — GoatCounter (gratis, sin cookies, no necesita banner)
+1. Crea una cuenta en <https://www.goatcounter.com> y elige un código (p. ej. `andrea` → `andrea.goatcounter.com`).
+2. Pega ese código en `goatcounterCode`.
+
+## Textos pendientes
+
+- `aviso-legal.html` y `privacidad.html`: todo lo marcado en rosa (`[NOMBRE Y APELLIDOS]`, `[NIF]`, `[DIRECCIÓN…]`, `[FECHA]`, plazo de conservación).
+- Foto: sustituir el avatar con la “A” por una imagen real (en las dos versiones de idioma).
 - Intereses (chips) y textos de “Quién soy”.
+
+## Si cambias de dominio
+
+Las direcciones `https://mrsfrupent.github.io/servicios-digitales-creativos/` de las etiquetas `og:*`, `canonical` y `hreflang` (en `index.html` y `en/index.html`) deben cambiarse por el nuevo dominio para que la vista previa al compartir siga funcionando.
 
 ## Verla en local
 
-Abre `index.html` en el navegador.
+Ejecuta `python3 -m http.server` en esta carpeta y visita <http://localhost:8000>.
 
 ## Publicarla gratis (GitHub Pages)
 
-Settings → Pages → *Deploy from a branch* → elige la rama y la carpeta `/ (root)`.
+Settings → Pages → *Deploy from a branch* → `main` / `(root)`.
