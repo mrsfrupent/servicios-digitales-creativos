@@ -83,7 +83,7 @@ const answers = {
     area: "Fuera de la caja",
     title: "¡Mejor todavía!",
     text: "Los problemas que no encajan en ninguna categoría son mis favoritos. Cuéntamelo y pensamos juntas/os cómo resolverlo.",
-    color: "var(--blue)",
+    color: "var(--pink)",
     fg: "var(--paper)",
   },
 };
